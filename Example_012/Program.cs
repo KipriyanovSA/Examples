@@ -53,3 +53,15 @@ string Method4(int count, string text)
 }
 // string res = Method4(10, "Z"); - 10 повторения текста в ковычках
 // Console.WriteLine(res); res - вызов результата
+
+string Method41(int count, string text)
+{
+    string result = String.Empty;
+    for (int i = 0; i < count; i++) // Вариант с циклом for
+    {
+        result = result + text;
+    }
+    return result;
+}
+string res = Method41(10, "Z");
+Console.WriteLine(res);
